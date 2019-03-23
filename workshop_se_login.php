@@ -53,7 +53,7 @@
           </ul>
         </div>
 
-          <center class="first">
+          <div class="first">
               <form action="login_php.php" method="POST" name="form">
                   <center style="font-size:35px">Login form</center><br><br>
                   <b>Login as </b>
@@ -71,7 +71,7 @@
                   <input type="submit" value="Login" onclick="return validation()">
                   <input type="reset" value="Reset">
               </form>
-          </center>
+          </div>
 
       <script language="Javascript">
              function validation()
