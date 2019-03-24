@@ -14,10 +14,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#" id="login">Login</a>
+                            <a class="nav-link" href="workshop_se_login.php" id="login">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="register">Register</a>
+                            <a class="nav-link" href="workshop_se_registration.php" id="register">Register</a>
                         </li>
                     </ul>
                 </div>
