@@ -1,63 +1,41 @@
 <html>
 <head>
-    <title> Home </title>
-    <style>
-        body {
-            background: url("598.jpg");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-        }
-
-        ul {
-            list-style-type: none;
-            display: block;
-            margin: 10;
-            padding: 0;
-            overflow: hidden;
-            background-color: rgba(131, 139, 153,0.4);
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover {
-            background-color: #111;
-        }
-        center{
-            padding:50px 50px;
-            font-family: Georgia;
-            font-size:40px;
-            font-weight: bolder;
-            margin-left:30px;
-
-        }
-    </style>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <title>Workshop registration</title>
 </head>
 <body>
-<div>
-    <ul>
-        <!-- <li><a class="active" href="index.html">Home</a></li>
-         <li><a href="#news">Booking</a></li>
-         <li><a href="#contact">Hall reviews</a></li>-->
-        <li style="float:right"><a href="login.php">Login</a></li>
-        <li style="float: center"><a href="#">Home</a></li>
-    </ul>
-</div>
-<center>
-    <br><br>
-    <h2 style="color: black">
-        STUDENT WORKSHOP <br> AND  <br> GUEST LECTURE <br> TRACKING SYSTEM
-    </h2>
-</center>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Workshop Registration</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="php/workshop_se_login.php" id="login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="php/workshop_se_registration.php" id="register">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <h2 class="main_content" id="scene">
+            <div data-depth="0.6">
+                STUDENT WORKSHOP <br> AND  <br> GUEST LECTURE <br> TRACKING SYSTEM
+            </div>
+        </h2>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script>
+        var scene = document.getElementById("scene");
+        var parallax = new Parallax(scene)
+    </script>
 </body>
 </html>

@@ -1,38 +1,49 @@
 body {
-    background: url("598.jpg");
+    background: url("../workshop_se_598.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-
-ul {
-    list-style-type: none;
-    margin: 10;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(131, 139, 153,0.4);
-}
-
-li {
-    float: left;
-}
-
-li a {
+.main_content{
     display: block;
-    color: white;
-    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    position: absolute;
+    top:35%;
+    left: 50%;
+    width:800px;
+    margin-left: -400px;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
-center{
-    padding:50px 50px;
     font-family: Georgia;
     font-size:40px;
     font-weight: bolder;
-    margin-left:30px;
-
+}
+.box{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    position: inherit;
+    color: #ffffff;
+    text-align: center;
+    margin: 30px;
+    border-radius: 20px;
+    height: 85%;
+    background-color: rgba(0,0,0,0.7);
+    border: 1px solid black;
+}
+form{
+    display: block;
+    position: absolute;
+    width: 30%;
+    left: 50%;
+    opacity: unset;
+    margin-left: -15%;
+}
+form input{
+    border: 4px;
+    animation: 0.2s;
+}
+form input:valid{
+    border: 3px solid greenyellow;
+    animation: 0.2s;
+}
+form input:invalid{
+    border: 3px solid orangered;
+    animation: 0.2s;
 }
